@@ -1,0 +1,155 @@
+    1  vim ~/.bash_history 
+    2  exit
+    3  ls
+    4  mkdir ~/Desktop/test
+    5  touch ~/Desktop/test/test.txt
+    6  cd Desktop/test/
+    7  code .
+    8  docker
+    9  sudo apt-get update
+   10  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg-agent     software-properties-common
+   11  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   12  sudo apt-key fingerprint 0EBFCD88
+   13  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   14     $(lsb_release -cs) \
+   15     stable"
+   16  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   17  docker run hello-world
+   18  sudo docker run hello-world
+   19  sudo groupadd docker
+   20  sudo usermod -aG docker $USER
+   21  newgrp docker
+   22  docker run hello-world
+   23  docker
+   24  docker run hello-world
+   25  clear
+   26  ls
+   27  cd Desktop/docker-project/website/
+   28  docker run -d -v $(pwd):usr/share/nginx/html -p 8080:80 nginx
+   29  docker pull nginx
+   30  docker run -d -v $(pwd):usr/share/nginx/html -p 8080:80 nginx
+   31  docker run -d -v $(pwd):/usr/share/nginx/html -p 8080:80 nginx
+   32  docker ps
+   33  docker exec -it bold_lovelace bash
+   34  docker ps
+   35  ls
+   36  docker ps
+   37  dcoker pull nginx
+   38  docker pull nginx
+   39  cd Desktop/docker-project/website/
+   40  ls
+   41  pwd
+   42  docker run -d -v $(pwd):/usr/share/nginx/html -p 8081:80 nginx
+   43  sudo ufw allow 8081
+   44  sudo ufw disable
+   45  docker run -d -p 8082:80 nginx
+   46  ls
+   47  cd /home/rhyme/Desktop/docker-project/startbootstrap-freelancer-gh-pages/
+   48  ls
+   49  docker run -d -p 8083:80 -v $(pwd):/usr/share/nginx/html nginx
+   50  docker images
+   51  docker ps
+   52  ls
+   53  exit
+   54  ls
+   55  cd Desktop/startbootstrap-grayscale-gh-pages/
+   56  docker run -d -p 8086:80 -v $(pwd):/usr/share/nginx/html nginx
+   57  cd Desktop/startbootstrap-grayscale-gh-pages/
+   58  ls
+   59  docker run -d -p 8080:80 -v $(pwd):/usr/share/nginx/html nginx
+   60  docker ps
+   61  chmod -R o+rX $(pwd)
+   62  ls -l
+   63  cd ..
+   64  ls
+   65  cd docker-project/
+   66  ls
+   67  cd website/
+   68  ls
+   69  ls -l
+   70  docker run -d -p 8081:80 -v $(pwd):/usr/share/nginx/html nginx
+   71  chmod -R o+rX $(pwd)
+   72  ls -l
+   73  docker stop $(docker ps -aq)
+   74  docker ps -a
+   75  docker rm $(docker ps -aq)
+   76  docker ps -a
+   77  cd ~Desktop
+   78  cd ~/Desktop/
+   79  ls
+   80  cd docker-project/website/
+   81  ls
+   82  clear
+   83  docker run -d --name website -v $(pwd):/usr/share/nginx/html -p 8080:80 nginx
+   84  docker stop website
+   85  docker rm website
+   86  docker ps
+   87  docker run -d --name website -v $(pwd):/usr/share/nginx/html -p 8081:80 nginx
+   88  chmod -R o+rX $(pwd)
+   89  clear
+   90  ls
+   91  cd Desktop/docker-project/website/
+   92  code .
+   93  docker ps
+   94  cd Desktop/docker-project/website/
+   95  chmod -R o+rX $(pwd)
+   96  docker run -d --name website -v $(pwd):/usr/share/nginx/html -p 8081:80 nginx
+   97  docker ps
+   98  docker ps -aq
+   99  docker ps -a
+  100  docker start website
+  101  code .
+  102  docker ps
+  103  docker ps -a
+  104  docker start website
+  105  cd Desktop/docker-project/website/
+  106  code .
+  107  docker start website
+  108  docker stop website 
+  109  docker rm website
+  110  docker ps -a
+  111  docker pull nginx
+  112  docker images
+  113  docker run nginx
+  114  docker run -d nginx
+  115  docker ps
+  116  docker exec -it 921fac946388 bash
+  117  docker run -d -p 8080:80 nginx
+  118  docker ps
+  119  docker stop 55ee4c7d4cf6
+  120  docker start 55ee4c7d4cf6
+  121  docker ps -a
+  122  docker rm 55ee4c7d4cf6
+  123  docker rm -f
+  124  docker rm -f 55ee4c7d4cf6
+  125  docker ps
+  126  docker ps -aq
+  127  docker rm $(docker ps -aq)
+  128  docker rm -f $(docker ps -aq)
+  129  docker ps -aq
+  130  docker -d -p 8080:80 --name test site nginx
+  131  docker -d -p 8080:80 --name test_site nginx
+  132  docker run -d -p 8080:80 --name test_site nginx
+  133  docker ps
+  134  docker rename test_site new_site
+  135  docker ps
+  136  ls
+  137  docker ps
+  138  docker exec -it new_site bash
+  139  ls
+  140  mkdir website
+  141  touch test.txt
+  142  docker run -d -p 8081:80 --name website2 -v $(pwd):/website nginx
+  143  docker exec -it website2 bash
+  144  ls
+  145  cd ..
+  146  docker stop website2
+  147  docker rm website2
+  148  cd ~/Desktop/Docker-project/website
+  149  cd ~/Desktop/docker-project/website/
+  150  ls
+  151  docker rm $(docker ps -aq)
+  152  docker rm -f $(docker ps -aq)
+  153  docker run -d -p 8080:80 --name website2 -v $(pwd):/usr/share/nginx/html nginx
+  154  cd ..
+  155  history >> myhistory.txt
